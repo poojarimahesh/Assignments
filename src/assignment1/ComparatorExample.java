@@ -2,45 +2,8 @@ package assignment1;
 
 
 import java.util.*;
-class Laptop {
-   private int price;
-   private String brand;
-   private int ram;
-   
-   Laptop(String brand , int price , int ram){
-       this.brand=brand;
-       this.price=price;
-       this.ram=ram;
-   }
-   public void setPrice(int price){
-       this.price =price;
-       
-   }
-   public void setBrand(String brand){
-       this.brand =brand;
-       
-   }
-   public void setRam(int ram){
-       this.ram =ram;
-       
-   }
-   public int getRam(){
-       return ram;
-   }
-   public String getBrand(){
-       return brand;
-   }
-   public int getPrice(){
-       return price;
-   }
-   public String toString(){
-       return "Brand "+ this.getBrand()+ " Price "+ getPrice() + " with Ram "+ getRam();
-   }
-   
-   
-   
-}
-public class ComparatorExample {
+
+public class ComparatorExample{
    public static void main(String args[]) {
      ArrayList<Laptop> list = new ArrayList<>();
      

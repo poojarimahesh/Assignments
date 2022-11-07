@@ -1,6 +1,7 @@
 package assignment1;
 
 import java.util.*;
+import java.util.Map.Entry;
 public class HashMapExample {
     public static void main(String args[]) {
         //creation of HashMap
@@ -20,7 +21,7 @@ public class HashMapExample {
       //traversing the HashMap
       
       System.out.println("HashMap Elements : " );
-      Iterator hashMapIterator= map.entrySet().iterator();
+      Iterator<Entry<String, Integer>> hashMapIterator= map.entrySet().iterator();
       while(hashMapIterator.hasNext()){
           Map.Entry mapElement = (Map.Entry)hashMapIterator.next();
           System.out.println("Key : " + mapElement.getKey());
